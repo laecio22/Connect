@@ -7,11 +7,13 @@ import Voluntariado from "./pages/voluntariado/Voluntariado";
 import EventosEP from "./pages/eventosEP/EventosEP";
 
 import "./globalStyles.scss";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/doacao" element={<Doacao />} />
@@ -21,7 +23,6 @@ const App = () => {
           <Route path="/eventos" element={<EventosEP />} />
         </Routes>
       </BrowserRouter>
-      <h1>Connect</h1>
     </>
   );
 };
