@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-
+import PhotoPerfil from '../../assets/images/laecio.jpg';
 const Header = () => {
   return (
     <>
@@ -17,11 +17,13 @@ const Header = () => {
           <ul>
             <Link to="/doacao">Doação</Link>
             <Link to="/voluntariado">Voluntariado</Link>
-            <Link to="/mentoria">Mentoria</Link>
+            <Link to="/mentoria">Mentorias</Link>
             <Link to="/eventos">Eventos</Link>
           </ul>
         </nav>
+        <img src={PhotoPerfil} alt="Minha foto  do perfil de usuário" />
       </header>
+      <Link to="/">Laécio da Conceição</Link>
     </>
   );
 };
