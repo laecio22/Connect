@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import PhotoPerfil from '../../assets/images/laecio.jpg';
+import S from './header.module.scss';
+
 const Header = () => {
   return (
     <>
-      <header>
+      <header className={S.header}>
         <section>
           <Link to="/">
             <img
