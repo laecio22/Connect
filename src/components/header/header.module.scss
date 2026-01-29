@@ -1,10 +1,13 @@
+@use '../../styles/colors' as c;
+
 .header {
   border: solid 2px red;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #205691;
+  background-color: c.$color-blue;
+ 
   img {
     width: 5vw;
   }
