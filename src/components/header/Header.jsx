@@ -14,9 +14,8 @@ const Header = () => {
               alt="logo da aplicação representado por uma  imagem de uma  mão segurando um coração"
             />
           </Link>
-        </section>
-        <h1>Texto</h1>
-        <nav>
+        </section>       
+        <nav className={S.nav}>
           <ul>
             <Link to="/doacao">Doação</Link>
             <Link to="/voluntariado">Voluntariado</Link>

@@ -1,14 +1,28 @@
-@use '../../styles/colors' as c;
+@use "../../styles/colors" as c;
 
 .header {
-  border: solid 2px red;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: c.$color-blue;
- 
+  color: c.$color-white;
+
   img {
     width: 5vw;
+  }
+
+  .nav {
+    font-size: 28px;
+    font-weight: 400;
+
+    ul {
+      display: flex;
+      gap: 2rem;
+    }
+
+    a {
+      color: c.$color-white;
+    }
   }
 }
