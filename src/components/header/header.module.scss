@@ -7,22 +7,45 @@
   justify-content: space-between;
   background-color: c.$color-blue;
   color: c.$color-white;
-
-  img {
-    width: 5vw;
+  padding: 0 1.2rem;
+  position: relative;
+  .imgLogo {
+    width: 100%;
   }
-
   .nav {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
-
-    ul {
-      display: flex;
-      gap: 2rem;
-    }
-
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     a {
       color: c.$color-white;
+      padding: 5px 20px;
     }
   }
+  .imgUser {
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #00aaff;
+    cursor: pointer;
+  }
 }
+
+.navUser {
+  position: absolute;
+  right: 0;
+  top: 12%;
+  background-color:c.$color-blue ;
+  a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-align: end;    
+  }
+  
+}
+.closedNav {
+    display: none;
+  }
