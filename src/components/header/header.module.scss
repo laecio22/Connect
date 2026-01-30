@@ -13,12 +13,10 @@
     width: 100%;
   }
   .nav {
-    font-size: 24px;
-    font-weight: 400;
+    @include m.tamanhoForcaFonte( f.$font-source, 24px, 400);    
+    @include m.containerFlexivelBetween(); 
     width: 100%;
     max-width: 600px;  
-    font-family: f.$font-source;   
-    @include m.containerFlexivelBetween(); 
     a {
       color: c.$color-white;
       padding: 5px 20px;
@@ -40,7 +38,8 @@
     display: block;
     padding: 5px 10px;
     color: white;
-    text-align: end;    
+    text-align: end;  
+    @include m.tamanhoForcaFonte(f.$font-source, 16px, 400 );
   }
   
 }
