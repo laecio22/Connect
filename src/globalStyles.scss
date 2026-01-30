@@ -1,14 +1,9 @@
-@use './styles/fonts' as f;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: f.$font-source, 'sans-serif';
-}
