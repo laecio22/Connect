@@ -12,8 +12,8 @@
   .imgLogo {
     width: 100%;
   }
-  .nav {
-    @include m.tamanhoForcaFonte(f.$font-source, 24px, 400);
+  .nav {    
+    @include m.tamanhoForcaFonte(f.$font-source, f.$tamanho-texto, 400);
     @include m.containerFlexivelBetween();
     width: 100%;
     max-width: 600px;
@@ -39,7 +39,7 @@
     padding: 5px 10px;
     color: white;
     text-align: end;
-    @include m.tamanhoForcaFonte(f.$font-source, 16px, 400);
+    @include m.tamanhoForcaFonte(f.$font-source, f.$tamanho-paragrafo, 400);
   }
 }
 .closedNav {
