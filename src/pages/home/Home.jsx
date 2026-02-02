@@ -2,7 +2,7 @@ import ImagemPrincipal from "../../assets/images/imgPrincipal.png";
 const Home = () => {
   return (
     <section>
-      <div>
+      {/* <div>
         <h1>Projetos Sociais que transformam</h1>
         <div>
           Conectamos sua empresa com projetos sociais impactantes. Juntos,
@@ -29,7 +29,7 @@ const Home = () => {
           src={ImagemPrincipal}
           alt="Imagem mãos  segurando  bonecos dando  as  mãos ao redor de um globo terrestre"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

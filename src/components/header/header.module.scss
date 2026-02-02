@@ -3,7 +3,7 @@
 @use "../../styles/mixins" as m;
 
 .header {
-  height: 100px; 
+  height: 100px;
   background-color: c.$color-blue;
   color: c.$color-white;
   padding: 0 1.2rem;
@@ -13,10 +13,10 @@
     width: 100%;
   }
   .nav {
-    @include m.tamanhoForcaFonte( f.$font-source, 24px, 400);    
-    @include m.containerFlexivelBetween(); 
+    @include m.tamanhoForcaFonte(f.$font-source, 24px, 400);
+    @include m.containerFlexivelBetween();
     width: 100%;
-    max-width: 600px;  
+    max-width: 600px;
     a {
       color: c.$color-white;
       padding: 5px 20px;
@@ -32,17 +32,22 @@
 .navUser {
   position: absolute;
   right: 0;
-  top: 12%;
-  background-color:c.$color-blue ;
+  top: 5rem;
+  background-color: c.$color-blue;
   a {
     display: block;
     padding: 5px 10px;
     color: white;
-    text-align: end;  
-    @include m.tamanhoForcaFonte(f.$font-source, 16px, 400 );
+    text-align: end;
+    @include m.tamanhoForcaFonte(f.$font-source, 16px, 400);
   }
-  
 }
 .closedNav {
-    display: none;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .imgLogo {
+    max-width: 57px;
   }
+}
