@@ -1,4 +1,5 @@
 import ImagemPrincipal from "../../assets/images/imgPrincipal.png";
+import Button  from '../../components/button/Button';
 import S from './home.module.scss';
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
           Conectamos sua empresa com projetos sociais impactantes. Juntos,
           criamos mudanças reais na comunidade.
         </div>
-        <button>Cadastrar Empresa</button>
+        <Button isButtonSecondary hasIcon>Cadastrar Empresa</Button>
+       
+       
         <section className={S.infoDados}>
           <article>
             <h3>500+</h3>

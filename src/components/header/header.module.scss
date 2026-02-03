@@ -9,12 +9,14 @@
   padding: 0 1.2rem;
   position: relative;
   @include m.containerFlexivelBetween();
+  align-items: center;
   .imgLogo {
     width: 100%;
   }
-  .nav {    
+  .nav {
     @include m.tamanhoForcaFonte(f.$font-source, f.$tamanho-texto, 400);
     @include m.containerFlexivelBetween();
+    align-items: center;
     width: 100%;
     max-width: 600px;
     a {

@@ -1,0 +1,27 @@
+@use '../../styles/colors'  as  c;
+@use '../../styles/mixins' as m;
+
+.button {
+    @include m.estilizacaoFontsBotao();
+    @include m.containerFlexivelCentralizado();
+    color: c.$color-white-secondary;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;    
+    gap: 0.4rem;
+    background-color: c.$color-blue;
+
+    span {
+        height: 40%;
+    }
+
+}
+
+.buttonSecondary {
+    background-color: c.$color-red;
+
+    &:hover {
+        background-color: c.$color-red-hover;
+    }
+}
