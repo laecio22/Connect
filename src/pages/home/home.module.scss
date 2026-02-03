@@ -1,6 +1,7 @@
 @use '../../styles/mixins' as m;
 @use '../../styles/colors' as  c;
 @use '../../styles/fonts' as f;
+
 .main {
   border: solid 2px red;
   display: flex;
@@ -25,4 +26,8 @@
     width: 40%;
     height: 60px;
   }
+}
+
+.infoDados {
+  @include m.containerFlexivelBetween() 
 }
