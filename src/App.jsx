@@ -8,6 +8,7 @@ import EventosEP from "./pages/eventosEP/EventosEP";
 
 import "./globalStyles.scss";
 import Header from "./components/Header/Header";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/usuario" element={<Usuario />} />
           <Route path="/eventos" element={<EventosEP />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
