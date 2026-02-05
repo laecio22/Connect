@@ -1,28 +1,31 @@
-@use '../../styles/mixins' as m;
-@use '../../styles/colors' as  c;
-@use '../../styles/fonts' as f;
+@use "../../styles/mixins" as m;
+@use "../../styles/colors" as c;
+@use "../../styles/fonts" as f;
 
 .main {
-  border: solid 2px red;
   display: flex;
   justify-content: space-between;
 
   img {
     max-width: 100%;
     min-width: 0;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
   }
 }
 
 .info {
-  border: solid 2px rgb(0, 4, 255);
+  // border: solid 2px rgb(0, 4, 255);
   @include m.containerFlexivelColunmEvelyn();
   padding: 0 20px;
-  
-   h1 {
+
+  h1,
+  div {
+    width: 45rem;
+  }
+  h1 {
     @include m.estilizacaoFontsTituloPrincipal();
-    color: c.$color-blue;   
+    color: c.$color-blue;
   }
   div {
     @include m.estilizacaoFontsTexto();
@@ -36,13 +39,35 @@
 }
 
 .infoDados {
-  @include m.containerFlexivelBetween() 
+  @include m.containerFlexivelBetween();
 }
 
-@media screen and (max-width:768px) {
-  .main{
+@media screen and (max-width: 1200px) {
+  .main {
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
+
+    .info {
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .infoDados {
+      gap: 5rem;
+
+      article {
+         p{
+          font-weight: bold;
+         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
     height: auto;
 
     img {
@@ -55,38 +80,39 @@
       justify-content: space-between;
       align-items: center;
 
-      h1{
+      h1 {
         font-size: 80px;
       }
 
-      h1,p {
+      h1,
+      p {
         text-align: center;
       }
     }
     .infoDados {
       article {
-        
+        width: 120px;
       }
     }
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .main {
     height: 1000px;
   }
 
-  .info h1{
+  .info h1 {
     font-size: 40px;
   }
 
-  .info p{
+  .info p {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 360px) {
   .infoDados {
-     flex-direction: column;
+    flex-direction: column;
   }
 }
