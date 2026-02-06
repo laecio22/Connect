@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx";
-import Mentoria from "./pages/mentoria/Mentoria.jsx";
-import Usuario from "./pages/usuario/Usuario.jsx";
-import Doacao from "./pages/doacao/Doacao.jsx";
-import Voluntariado from "./pages/voluntariado/Voluntariado.jsx";
-import EventosEP from "./pages/eventosEP/EventosEP.jsx";
+import Home from "./pages/home/Home";
+import Mentoria from "./pages/mentoria/Mentoria";
+import Usuario from "./pages/usuario/Usuario";
+import Doacao from "./pages/doacao/Doacao";
+import Voluntariado from "./pages/voluntariado/Voluntariado";
+import EventosEP from "./pages/eventosEP/EventosEP";
 
 import "./globalStyles.scss";
-import Header from "./components/Header/Header.jsx";
+import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/doacao" element={<Doacao />} />
           <Route path="/voluntariado" element={<Voluntariado />} />
           <Route path="/mentoria" element={<Mentoria />} />
