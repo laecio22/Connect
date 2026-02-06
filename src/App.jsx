@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Mentoria from "./pages/mentoria/Mentoria";
-import Usuario from "./pages/usuario/Usuario";
-import Doacao from "./pages/doacao/Doacao";
-import Voluntariado from "./pages/voluntariado/Voluntariado";
-import EventosEP from "./pages/eventosEP/EventosEP";
+import Home from "./pages/Home/Home.jsx";
+import Mentoria from "./pages/mentoria/Mentoria.jsx";
+import Usuario from "./pages/usuario/Usuario.jsx";
+import Doacao from "./pages/doacao/Doacao.jsx";
+import Voluntariado from "./pages/voluntariado/Voluntariado.jsx";
+import EventosEP from "./pages/eventosEP/EventosEP.jsx";
 
 import "./globalStyles.scss";
-import Header from "./components/Header/Header";
-import Footer from "./components/footer/Footer";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const App = () => {
   return (
