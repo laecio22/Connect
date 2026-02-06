@@ -1,10 +1,40 @@
-import React from "react";
-
+import InfoCard from "../../components/infoCard/InfoCard";
+import IGfamilia from "../../assets/images/IGfamilia.png";
+import S from "./doacao.module.scss";
 const Doacao = () => {
   return (
-    <div>
+    <main className={S.main}>
       <h1>Doação</h1>
-    </div>
+      <section>
+        <article>
+          <InfoCard
+            img={IGfamilia}
+            alt="Imagem de  uma  pessoa  carregando uma  caixa  para  doação"
+            subtitulo="Instituto  Grande  Família"
+            paragrafo="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            textBotao="Quero Doar"
+          />
+        </article>
+        <article>
+          <InfoCard
+            img={IGfamilia}
+            alt="Imagem de  uma  pessoa  carregando uma  caixa  para  doação"
+            subtitulo="Instituto  Grande  Família"
+            paragrafo="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            textBotao="Quero Doar"
+          />
+        </article>
+        <article>
+          <InfoCard
+            img={IGfamilia}
+            alt="Imagem de  uma  pessoa  carregando uma  caixa  para  doação"
+            subtitulo="Instituto  Grande  Família"
+            paragrafo="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            textBotao="Quero Doar"
+          />
+        </article>
+      </section>
+    </main>
   );
 };
 
