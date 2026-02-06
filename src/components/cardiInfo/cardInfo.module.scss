@@ -1,7 +1,6 @@
 @use "../../styles/mixins" as m;
 @use "../../styles/colors" as c;
 .article {
-  // border: 1px solid green;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
