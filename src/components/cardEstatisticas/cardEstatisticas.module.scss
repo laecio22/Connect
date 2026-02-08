@@ -13,3 +13,22 @@
     @include m.estilizacaoFontsParagrafo();
   }
 }
+
+@media  screen and (max-width:1200px) {
+  .article {
+    p {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .article {
+    width: auto;
+    padding: 0;
+
+    h3 {
+      font-size: 40px;
+    }
+  }
+}

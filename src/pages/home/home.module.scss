@@ -3,8 +3,7 @@
 @use "../../styles/fonts" as f;
 
 .main {
-  display: flex;
-  justify-content: space-between; 
+  @include m.containerFlexivelBetween();
 
   img {
     max-width: 100%;
@@ -57,12 +56,7 @@
 
     .infoDados {
       gap: 5rem;
-      width: 100%;
-      article {
-        p {
-          font-weight: bold;
-        }
-      }
+      width: 100%;    
     }
   }
 }
@@ -97,11 +91,7 @@
       }
     }
     .infoDados {
-      gap: 0;
-      article {
-        width: auto;
-        padding: 0;
-      }
+      gap: 0;    
     }
   }
 }
