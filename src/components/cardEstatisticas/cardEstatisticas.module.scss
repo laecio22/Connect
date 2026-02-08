@@ -1,10 +1,8 @@
 @use "../../styles/mixins" as m;
 @use "../../styles/colors" as c;
 .article {
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include m.containerFlexivelColumnCentralizado();
+  padding: 0 15px;  
   gap: 0.5rem;
   color: c.$color-blue;
   h3 {

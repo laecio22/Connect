@@ -1,6 +1,6 @@
 import ImagemPrincipal from "../../assets/images/imgPrincipal.png";
 import Button from "../../components/button/Button";
-import CardInfo from "../../components/cardiInfo/CardInfo";
+import CardEstatisticas from "../../components/cardEstatisticas/CardEstatisticas";
 import S from "./home.module.scss";
 const Home = () => {
   return (
@@ -16,9 +16,9 @@ const Home = () => {
         </Button>
 
         <section className={S.infoDados}>
-          <CardInfo title="500+" text="Empresas Voluntárias" />
-          <CardInfo title="1.2K+" text="Projetos Realizados" />
-          <CardInfo title="50K+" text="Vidas Impactadas" />
+          <CardEstatisticas title="500+" text="Empresas Voluntárias" />
+          <CardEstatisticas title="1.2K+" text="Projetos Realizados" />
+          <CardEstatisticas title="50K+" text="Vidas Impactadas" />
         </section>
       </section>
       <img

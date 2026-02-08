@@ -1,4 +1,4 @@
-import S from './cardInfo.module.scss';
+import S from './cardEstatisticas.module.scss';
 
 const CardInfo = ({title, text}) => {
   return (
