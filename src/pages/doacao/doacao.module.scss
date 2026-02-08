@@ -1,29 +1,27 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/colors" as c;
+
 .main {
-  display: flex;
-  flex-direction: column;
+  @include m.containerFlexivelColunmEvelyn();
   align-items: center;
-  justify-content: space-evenly;
   height: 100vh;
 
   h1 {
-    font-family: "Source  Sans 3", sans-serif;
-    color: #205691;
-    font-size: 60px;
+    @include m.estilizacaoFontsTituloAuxiliar();
+    color: c.$color-blue;
   }
 
   section {
-      display: flex;
     width: 100%;
-    justify-content: space-around;
+    @include m.containerFlexivelAround();
 
     article {
-        flex: 1;
-        display: flex;
-        justify-content: space-around;
+      flex: 1;
+      @include m.containerFlexivelAround();
     }
 
-    article:not(:last-child){
-        border-right: 1px  solid #ccc;
+    article:not(:last-child) {
+      border-right: 1px solid #ccc;
     }
   }
 }
