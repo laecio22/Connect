@@ -5,6 +5,12 @@
   justify-content: space-between;
 }
 
+@mixin containerFlexivelColunmBetween(){
+   display: flex; 
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 @mixin containerFlexivelAround ()  {
   display: flex;
   justify-content: space-around;

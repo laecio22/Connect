@@ -1,4 +1,5 @@
 import S from './infoCard.module.scss'
+import Button from '../button/Button';
 
 const InfoCard = (props) => {
   return (
@@ -6,7 +7,7 @@ const InfoCard = (props) => {
        <img src={props.img} alt={props.alt} />
        <h2>{props.subtitulo}</h2>
        <p>{props.paragrafo}</p>
-       <button>{props.textBotao}</button>
+       <Button>{props.textBotao}</Button>     
     </article>
   )
 }
