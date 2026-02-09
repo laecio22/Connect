@@ -35,7 +35,7 @@ const Header = () => {
           <nav className={S.nav}>
             <Link to="/doacao">Doação</Link>
             <Link to="/voluntariado">Voluntariado</Link>
-            <Link to="/mentoria">Mentorias</Link>
+            <Link to="/mentoria">Mentoria</Link>
             <Link to="/eventos">Eventos</Link>
           </nav>
         )}

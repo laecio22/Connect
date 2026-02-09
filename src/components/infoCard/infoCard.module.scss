@@ -4,26 +4,26 @@
 .article {
   @include m.containerFlexivelColunmBetween();
   max-width: 357px;
-  height: 65vh;  
+  height: 65vh;
   align-items: center;
   gap: 10px;
- 
+
   h2 {
     @include m.estilizacaoFontsCards();
-    color: c.$color-blue-dark;  
+    color: c.$color-blue-dark;
     text-align: center;
   }
 
   p {
     @include m.estilizacaoFontsParagrafo();
-    text-align: center;   
+    text-align: center;
     color: c.$color-blue-dark;
   }
 
-  button {   
+  button {
     width: 210px;
     height: 50px;
-    border-radius: 10px;  
+    border-radius: 10px;
   }
 }
 
@@ -32,22 +32,21 @@
   min-width: 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .article {
     h2 {
       font-size: 25px;
     }
 
     button {
-      width: 150px;
+      width: 170px;
       font-size: 20px;
     }
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .article {
-
     button {
       font-size: 18px;
     }
