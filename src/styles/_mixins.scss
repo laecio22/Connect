@@ -1,37 +1,42 @@
 @use "../styles/fonts" as f;
 
 @mixin containerFlexivelBetween() {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
-@mixin containerFlexivelColunmBetween(){
-   display: flex; 
+@mixin containerFlexivelColunmBetween() {
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-@mixin containerFlexivelAround ()  {
+@mixin containerFlexivelAround() {
   display: flex;
   justify-content: space-around;
 }
 
 @mixin containerFlexivelColunmEvelyn() {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-@mixin containerFlexivelCentralizado () {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin containerFlexivelCentralizado() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin containerFlexivelColumnCentralizado () {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@mixin containerFlexivelColumnCentralizado() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin containerFlexivelRowCentralizadoVertical() {
+  display: flex;
+  align-items: center;
 }
 
 @mixin tamanhoForcaFonte($font, $size, $weight) {

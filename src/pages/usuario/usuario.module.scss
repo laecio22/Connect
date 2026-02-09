@@ -1,0 +1,78 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/colors" as c;
+@use "../../styles/fonts" as  f;
+.main {
+  height: 100vh;
+  padding: 0 20px;
+  @include m.containerFlexivelCentralizado();
+  font-family: f.$font-inter;
+ 
+  section {
+     @include m.containerFlexivelRowCentralizadoVertical(); 
+    gap: 20px;    
+    max-width: 900px;
+
+    img.imagePerfil {
+      max-width: 300px;
+      border-radius: 50%;
+      border: 3px solid c.$color-blue-light;     
+    }
+
+    ul {
+      @include m.containerFlexivelRowCentralizadoVertical();    
+      gap: 15px;
+
+      li {
+        @include m.containerFlexivelRowCentralizadoVertical(); 
+        font-size: 15px;
+        gap: 4px;
+      }
+    }
+  }
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h2 {
+    font-size: 16px;
+    color: c.$color-green;
+      }
+
+  ul:last-child {
+    li {
+      background-color: c.$color-green-light;
+       color: c.$color-green;     
+      padding: 5px;
+      border-radius: 10px;   
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        section{
+            flex-direction: column;
+
+            div {
+                text-align: center;
+                gap: 20px;
+
+                ul {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .main {
+        height: 150vh;
+
+        ul {
+            flex-direction: column;
+        }
+    }
+}
