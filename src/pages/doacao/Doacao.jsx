@@ -1,6 +1,6 @@
 import InfoCard from "../../components/infoCard/InfoCard";
 import IGfamilia from "../../assets/images/IGfamilia.png";
-import S from "./doacao.module.scss";
+import S from "../../Styles.module.scss";
 const Doacao = () => {
   return (
     <main className={S.main}>

@@ -1,0 +1,56 @@
+@use "./styles/mixins" as m;
+@use "./styles/colors" as c;
+
+.main {
+  @include m.containerFlexivelColunmEvelyn();
+  align-items: center;
+  height: 100vh;
+
+  h1 {
+    @include m.estilizacaoFontsTituloAuxiliar();
+    color: c.$color-blue;
+  }
+
+  section {
+    width: 100%;
+    @include m.containerFlexivelAround();
+
+    article {
+      flex: 1;
+      @include m.containerFlexivelAround();
+    }
+
+    article:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: 160vh;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    section {
+      flex-wrap: wrap;
+      gap: 10px;
+      article {
+        min-width: 250px;
+      }
+
+      article:not(:last-child) {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+    .main {
+        height: 220vh;
+    }
+}

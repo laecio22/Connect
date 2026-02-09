@@ -29,3 +29,16 @@
   max-width: 100%;
   min-width: 0;
 }
+
+@media screen and (max-width: 768px){
+  .article {
+    h2 {
+      font-size: 25px;
+    }
+
+    button {
+      width: 150px;
+      font-size: 20px;
+    }
+  }
+}
