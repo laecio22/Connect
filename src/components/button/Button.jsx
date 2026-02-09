@@ -1,11 +1,12 @@
 import S from "./button.module.scss";
 import ArrowIcon from '../../assets/images/arrowIcon.png'
 
-const Button = ({ children, isButtonSecondary, hasIcon }) => {
+const Button = ({ children, isButtonSecondary, hasIcon, handleClick }) => {
   
   return (
     <button
       className={ ` ${S.button} ${isButtonSecondary ? S.buttonSecondary : ""}` }
+      onClick={handleClick}
     >
       {children}
       {hasIcon && (

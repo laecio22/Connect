@@ -55,7 +55,7 @@ const Header = () => {
             <div>
               <Link to="/doacao" onClick={()=>setMenuAberto(false)}>Doação</Link>
               <Link to="/voluntariado" onClick={()=>setMenuAberto(false)}>Voluntariado</Link>
-              <Link to="/mentoria" onClick={()=>setMenuAberto(false)}>Mentorias</Link>
+              <Link to="/mentoria" onClick={()=>setMenuAberto(false)}>Mentoria</Link>
               <Link to="/eventos" onClick={()=>setMenuAberto(false)}>Eventos</Link>
             </div>
           )}
