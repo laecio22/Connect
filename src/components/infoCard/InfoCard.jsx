@@ -7,6 +7,7 @@ const InfoCard = (props) => {
        <img src={props.img} alt={props.alt} />
        <h2>{props.subtitulo}</h2>
        <p>{props.paragrafo}</p>
+       {props.segundoParagrafo && <p>{props.segundoParagrafo}</p>}
        <Button>{props.textBotao}</Button>     
     </article>
   )

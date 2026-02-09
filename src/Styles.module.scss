@@ -50,7 +50,11 @@
 }
 
 @media screen and (max-width: 540px) {
-    .main {
-        height: 220vh;
+  .main {
+    height: 220vh;
+
+    h1 {
+      font-size: 35px;
     }
+  }
 }

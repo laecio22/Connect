@@ -4,9 +4,10 @@
 .article {
   @include m.containerFlexivelColunmBetween();
   max-width: 357px;
-  height: 55vh;  
+  height: 65vh;  
   align-items: center;
-
+  gap: 10px;
+ 
   h2 {
     @include m.estilizacaoFontsCards();
     color: c.$color-blue;  
@@ -40,6 +41,15 @@
     button {
       width: 150px;
       font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .article {
+
+    button {
+      font-size: 18px;
     }
   }
 }
