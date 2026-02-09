@@ -1,7 +1,7 @@
 import InfoCard from "../../components/infoCard/InfoCard";
 import IGfamilia from "../../assets/images/IGfamilia.png";
-import ImageLivros from '../../assets/images/ImagemLivros.png';
-import ImagemComputadores from '../../assets/images/ImagemComputadores.png';
+import ImageLivros from '../../assets/images/imagemLivros.png';
+import ImagemComputadores from '../../assets/images/imagemComputadores.png';
 import S from "../../Styles.module.scss";
 const Doacao = () => {
   return (
